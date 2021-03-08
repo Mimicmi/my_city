@@ -7,6 +7,6 @@
     <img class="object-none h-48 w-full"
   src="{{ asset('/images/lyon.jpg') }}" alt="photo lyon">
   </div>
-  <h1>Hello from Lyon !</h1>
+  <h1 class="text-3xl font-semibold text-indigo-600 mg">Hello from Lyon !</h1>
   <p>It's {{ date('h:i A') }} in Lyon !</p>
 @endsection

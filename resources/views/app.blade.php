@@ -8,19 +8,21 @@
     <title>@yield('title', config('app.name'))</title>
   </head>
 
-  <body>
-    @yield('content')
-    <br>
-    {{ config('project.quotation') }}
+  <body class="py-6 flex flex-col justify-between items-center min-h-screen ">
+
+    <main role="main" class="flex flex-col justify-center items-center">
+      @yield('content')
+      {{ config('project.quotation') }}
+    </main>
+
   </body>
 
-  <footer>
-    <p>&copy; Copyright {{ date('Y') }} 
-      
+  <footer class="flex flex-col justify-between">
+    <p class="text-gray-400">&copy; Copyright {{ date('Y') }} 
+          
       @if(!Route::is('about'))
-      &middot; <a href="{{ route('about') }}">About me</a> 
+      &middot; <a href="{{ route('about') }}" class="text-indigo-600 underline hover:text-indigo-900">About me</a> 
       @endif
     </p>
   </footer>
-
 </html>

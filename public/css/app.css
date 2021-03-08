@@ -31175,11 +31175,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-a {
-  color: blue;
-  text-decoration: underline;
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
