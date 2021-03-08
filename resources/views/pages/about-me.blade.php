@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'About me | Hi my city!')
+@section('title', 'About me | ' . env('APP_NAME'))
 
 @section('content')
   <p>Built with Laravel8 &hearts; by Simon F. checkout my <a href="https://github.com/Mimicmi" target="_blank">github</a> !</p>
