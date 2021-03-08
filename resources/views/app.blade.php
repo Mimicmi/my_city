@@ -14,7 +14,12 @@
   </body>
 
   <footer>
-    <p>&copy; Copyright {{ date('Y') }} &middot; <a href="{{ route('about') }}">About me</a> </p>
+    <p>&copy; Copyright {{ date('Y') }} 
+      
+      @if(!Route::is('about'))
+      &middot; <a href="{{ route('about') }}">About me</a> 
+      @endif
+    </p>
   </footer>
 
 </html>
