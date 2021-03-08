@@ -8,11 +8,11 @@
   </head>
 
   <body>
-    <h1>Hello from Lyon !</h1>
-    <p>It's 'insert time from function' {{ date('h:i A') }} in Lyon !</p>
+    @yield('content')
   </body>
 
   <footer>
     <p>&copy; Copyright {{ date('Y') }} &middot; <a href="/about-me">About me</a> </p>
   </footer>
+
 </html>
