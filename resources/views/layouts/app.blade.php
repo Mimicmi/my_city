@@ -6,7 +6,8 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     {{-- <title>@yield('title', config('app.name'))</title> --}}
-  <title>{{ isset($title) ? $title . ' | ' . config('app.name') : config('app.name') }}</title>
+    {{-- <title>{{ isset($title) ? $title . ' | ' . config('app.name') : config('app.name') }}</title> --}}
+    <title>{{ title_page($title ?? null) }}</title>
 
   </head>
 
